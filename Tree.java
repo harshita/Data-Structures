@@ -9,6 +9,7 @@ public class Tree<T> {
     private T data;
     private Tree left;
     private Tree right;
+    private int height;
 
     public Tree(T data) {
         this.data = data;
@@ -44,5 +45,13 @@ public class Tree<T> {
 
     public void setRight(Tree right) {
         this.right = right;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
     }
 }
